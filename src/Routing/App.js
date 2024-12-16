@@ -11,6 +11,8 @@ import Genre from '../Component/Genre';
 import BestBook from '../Sample/Bestbook';
 import HomePage from '../Sample/Hompage';
 import RecentHome from '../Sample/RecentHome';
+import CategoryBooks from '../Component/CategoryBooks';
+import GenreDetail from '../Component/GenreDetail'
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <Route path="/book/:id" element={<BookDetail />} />
       <Route path="/best/:bookId" element={<BestBook />} />
       <Route path="/recent/:bookId" element={<RecentHome />} />
+      <Route path="/books/:category" element={<CategoryBooks />} />
+      <Route path="/genre/:category/book/:bookId" element={<GenreDetail />} />
       </Routes>
       </Router>
       /*<Route path="/" element={<HomePage/>}/>*/

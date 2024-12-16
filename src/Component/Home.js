@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Button from '@mui/material/Button';
 import './Home.css';
+import logo from '../Component/Logo.jpg'
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState('');

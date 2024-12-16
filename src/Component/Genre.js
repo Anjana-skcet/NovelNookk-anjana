@@ -1,6 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Genre.css'; // Import the CSS file
 
 const genres = [
@@ -22,8 +21,8 @@ const Genre = () => {
   const navigate = useNavigate();
   return (
     <>
-    <div className="prof-headerr">
-        <button onClick={() => navigate('/Home')} className="prof-back-button">Back</button>
+      <div className="prof-headerr">
+        <button onClick={() => navigate('/home')} className="prof-back-button">Back</button>
         <div className="prof-logo-title-container">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/019/900/152/small/old-book-watercolor-illustration-png.png"
@@ -33,16 +32,16 @@ const Genre = () => {
           <h1 className="prof-titlee">NovelNook</h1>
         </div>
       </div>
-    <div className="genre-container">
-      <div className="genre-card">
-        {genres.map((genre) => (
-          <Link to={`/books/${genre.title}`} className="genre-item" key={genre.title}>
-            <img src={genre.image} alt={genre.title} className="genre-image" />
-            <div className="genre-title">{genre.title}</div>
-          </Link>
-        ))}
+      <div className="genre-container">
+        <div className="genre-card">
+          {genres.map((genre) => (
+            <Link to={`/books/${genre.title}`} className="genre-item" key={genre.title}>
+              <img src={genre.image} alt={genre.title} className="genre-image" />
+              <div className="genre-title">{genre.title}</div>
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 };

@@ -1,0 +1,32 @@
+.category-books-container {
+    padding: 20px;
+  }
+  
+  .books-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .book-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .book-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .book-title {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .book-author {
+    color: #555;
+  }
+  
